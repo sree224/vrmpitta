@@ -33,6 +33,22 @@ for(var i = 0; i < navLinks.length; i++){
   })
 }
 
+// coockies 
+const $$cookieDisclaimer = document.querySelector(".js-cookie-disclaimer");
+
+if (!localStorage.getItem("cookieDisclaimer")) {
+    $$cookieDisclaimer.classList.add("is-active");
+}
+
+$$cookieDisclaimer.querySelector("button").addEventListener("click", () => {
+    localStorage.setItem("cookieDisclaimer", true);
+    $$cookieDisclaimer.classList.remove("is-active");
+});
+function closebtn() {
+    document.getElementById("des_close").style.display = "none";
+}
+
+
 
 // Scroll Fixed
 window.onscroll = function (){
@@ -78,16 +94,10 @@ if (number == 0 && $(window).scrollTop() > oTop) {
 
 }
 
-  // desclaimer text animation
-  $(document).ready(function(){
-    $("#desc-btn").click(function(){
-      $("#desc-text").slideToggle("slow");
-    });
-  });
 
 // silk slider testmonial
 
-$('.testimonials').slick({
+$('.testimonials').click({
   dots: false,
   infinite: true, 
   slidesToShow: 1, 
@@ -111,4 +121,6 @@ function scrollToTop() {
   })
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
+
+// coockies 
 

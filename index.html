@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <title>VRM pitta </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--aos link-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,6 +14,9 @@
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/cookies.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 
     
 </head>
@@ -25,15 +27,16 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <a href="#"><img src="assets/images/VRM New copy.png" height="75px" width="100%" alt=""></a>
+                <a href="index.html"><img src="assets/images/logo1.png" height="80px" width="100%" alt=""></a>
             </div>
             <ul class="menu">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li id="active"><a href="index.html">Home</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="contact.html">USA: <i class="fas fa-phone"></i> +1(307)2259998<br>UK: <i class="fas fa-phone"></i> +44 800-102-6324</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="contact.php">USA: <i class="fas fa-phone"></i> +1(307)2259998<br>UK: <i class="fas fa-phone"></i> +44 800-102-6324</a></li>
+                
                 <div class="cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
@@ -43,7 +46,12 @@
             <i class="fas fa-bars"></i>
         </div>
     </nav>
-     
+     <script>
+         $(function() {
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+});
+
+     </script>
 
     <!--==== Top Banner Design==== -->
      <section class="home" id="home">
@@ -52,21 +60,15 @@
                  <div class="text">
                     <h1>The most effective Digital
                       <br>Advertising Agencies</h1>
-                    <p> We are focusing on UX design, branding, web design and development, digital
-
-                      marketing, social media marketing, SEO, PPC and etc.
-                      
-                      Example. </p>
+                  
+                      <P>We are Focusing On Branding, Digital Marketing, Social Media Marketing, SEO, PPC and SEM.</P>
                     
                        
                  </div>
              </div>
          </div>
      </section>
-
-
-
-     <!--=============About us section===============-->
+  <!--=============About us section===============-->
     
      <section class="agency" id="about">
         <div class="sec-content">
@@ -88,10 +90,7 @@
             </div> 
         </div>
     </section>
-     
-
-
-
+  
      <!--=============About us section ends===========-->
 
     <!-- ===== Services Sections==== -->
@@ -100,7 +99,8 @@
             <div class="sec-title">
                <h2>Our Services</h2>
                <h3>SEO Management & Strategy Services</h3>
-               <p>It is close to impossible to keep up with the ever-changing state of SEO. Since 1997, SEO Inc has been dedicated to the science and art of Search Engine Optimization, leading the way in SEO techniques and changes in algorithms. If you let SEO Inc improve your search engine optimization strategy with our advanced SEO services, it allows you to focus on your business / industry while leaving the search engine optimization and search engines. Our longevity and commitment to doing good sets us up as the leading Professional SEO company in the industry.</p>
+               <p>It is close to impossible to keep up with the ever-changing state of SEO. Since 1997, VRM PITTA has been dedicated to the science and art of Search Engine Optimization, 
+                   leading the way in SEO techniques and changes in algorithms. If you let VRM PITTA improve your search engine optimization strategy with our advanced SEO services, it allows you to focus on your business / industry while leaving the search engine optimization and search engines. Our longevity and commitment to doing good sets us up as the leading Professional SEO company in the industry.</p>
             </div>
             <div class="post-content">
                <div class="post-card">
@@ -236,7 +236,7 @@
                     <p class="price">Extra Features</p>
                     <p class="price">12/5 Free Support</p>
                       <div class="main-btn">
-                          <a href="contact.html"><button>Get Started</button></a>
+                          <a href="contact.php"><button>Get Started</button></a>
                       </div>
                    </div>
                </div>
@@ -256,7 +256,7 @@
                      
                      
                      <div class="main-btn">
-                        <a href="contact.html"><button>Get Started</button></a>
+                        <a href="contact.php"><button>Get Started</button></a>
                     </div>
                   </div>
               </div>
@@ -273,7 +273,7 @@
                      <p class="price">Extra Features</p>
                      <p class="price">12/5 Free Support</p>
                      <div class="main-btn">
-                        <a href="contact.html"><button>Get Started</button></a>
+                        <a href="contact.php"><button>Get Started</button></a>
                     </div>
                   </div>
               </div>
@@ -287,7 +287,7 @@
 
      <!--=====address-location section======-->
      <section class="location" id="location">
-        <div class="loc-banner" 
+        <div class="loc-banner" >
             <div class="loc-content">
                 <div class="loc-text"  >
                     <div class="container" >
@@ -342,9 +342,8 @@
   <section>
         
     <div class="sec-title1">
-    
-<button id="desc-btn">*Disclaimer</button>
-       <p id="desc-text"><b>VRM PITTA LLC</b>" provides services for diagnostic and technical support issues for desktops, laptops, mobile devices, and tablets.<br> We are a <b>THIRD PARTY</b> solution and we are <b>NOT AFFILIATED</b> with any brands, trademarks, logos, or any other company names used.<br> The brand names, trademarks, and logos belong to their respective owners and are for representation purposes only..</p>
+    <a href="coockies.html"><button >*Disclaimer</button></a>
+
     </div>
 
 </section>
@@ -357,22 +356,15 @@
          <div class="sec-content">
              <div class="footer-wiget">
                 <div class="footer-content">
-                    <h3>Contact VRM PITTA</h3>
-                  <img src="assets/images/VRM New copy.png" height="90px" width="100px"alt="">
-                  <p style="font-weight: 600;">UK:<br>
-                 <i class="fas fa-phone"></i> +44 800-102-6324
-                
-                  </p>
-                  <br>
-                  <p style="font-weight: 600;">USA:<br>
-                     <i class="fas fa-phone"></i> +1-888-5131305<br>
-                                                 
-                
-                  </p>
-                  <p><strong>Email:</strong>support@vrmpitta.com</p>
+                    <h3><b>Contact US</b></h3>
+                 
+                  <p><b>UK Phone No:&nbsp <i class="fas fa-phone"></i></b>  +44 800-102-6324</p>
+                  
+                  <p><b>USA Phone No: &nbsp <i class="fas fa-phone"></i>   </b> +1-888-5131305</p>
+                  <p><b>Email: &nbsp </b>info@vrmpitta.com</p>
                 </div>
                 <div class="footer-content">
-                    <h3>OUR SERVICES</h3>
+                    <h3><b>OUR SERVICES</b></h3>
                     <ul>
                         <li><a href="search.html">Search Engine Optimisation</a></li>
                         <li><a href="content.html">Content Writing Services</a></li>
@@ -383,21 +375,20 @@
                     </ul>
                 </div>
                 <div class="footer-content">
-                    <h3>USEFUL LINKS</h3>
+                    <h3><b>USEFUL LINKS</b></h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="service.html">Services</a></li>
                         <li><a href="pricing.html">Pricing</a></li> 
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
                         <li><a href="refund.html">Privacy policy</a></li> 
                         <li><a href="term.html">Terms and Conditions</a></li>
                         <li><a href="Sitemap.html">Sitemap</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
-                        <li><a href="https://support.onlinetechs365.com/">IT Remote Service</a></li>
                     </ul> 
                 </div>
                 <div class="footer-content">
-                    <h3>CONNECT WITH US SOCIALLY</h3>
+                    <h3><b>CONNECT WITH US SOCIALLY</b></h3>
                     <ul style="list-style:none;">
                         <p class="facebook" style="display:inline;"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></p>
                         <p class="linkedin" style="display:inline;"><a href="https://www.linkedin.com/company/vrm-pitta-llc/"><i class="fab fa-linkedin-in"></i></a></p>
@@ -413,8 +404,23 @@
             
         </div>
      </footer>
-
+     <div class="fixed fixed--bottom cookie-disclaimer js-cookie-disclaimer" id="des_close">
+        <div class="media__object media__object--right ">
+            <button class="button">Accept&nbsp;All</button>
     
+        </div>
+        <!-- <button id="close" style="background-color:black" onclick="close()">Close ✖</button> -->
+        <button id="close" style="background-color:black" onclick="closebtn()">Close ✖</button>
+    
+        <div class="media__body">
+            <p>We use cookies to understand how you use our site and to improve your experience, including personalizing
+                content and offering resources.
+                See our updated Privacy Policy and GDPR Policy to learn more. By continuing to use our site, you accept our
+                use of cookies.</p>
+        </div>
+    
+    </div>
+  
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
