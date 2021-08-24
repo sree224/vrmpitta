@@ -226,19 +226,23 @@ ul.breadcrumb {
 
 /*====== services ====== */
 .sec-content{
-    width:85%;
+    width:90%;
     margin:0 auto;
-    padding:4.25rem 0;
+    padding:2.25rem 0;
     text-align: center;
 }
-.sec-title{
-    text-align: center;
+.sec-title p{
+    text-align: justify;
     /* margin-bottom:6rem; */
-    text-align: center;
+    /* text-align: center; */
+}
+.sec-title h3{
+    padding: 15px;
 }
 .sec-title h2{
     font-size: 2.1875rem;
     font-weight: 600;
+    padding: 10px;
     color:var(--black-color);
     margin-bottom:0.5rem;
 }
@@ -517,12 +521,14 @@ ul.breadcrumb {
 .award .counter-item h5{
     font-size:1.125rem;
     /* color:var(--gray-color); */
+    padding: 25px;
     color: rgb(240, 245, 240);
 }
 
 .award-head{
     text-align: center;
     color: rgb(95, 138, 95);
+    padding: 30px;
     background-image: url(../images/galary.jpg);
 }
 
@@ -556,6 +562,12 @@ ul.breadcrumb {
 }
 .post-content .post-details{
     padding:1rem;
+}
+.post-details h3{
+    font-weight: 600;
+    padding: 18px;
+    font-size: 20px;
+
 }
 .post-content .post-details h2{
     color:var(--black-color);
@@ -750,7 +762,7 @@ margin: 250px;;
     height: 100%;
     width: 100%;
     border: none;
-    outline: none;
+    /* outline: none; */
     font-size: 16px;
     background: #F0F1F8;
     border-radius: 6px;
@@ -1047,9 +1059,9 @@ margin: 250px;;
 /*=====Refund-policy section=====*/
 .addressFont-refund{
     
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: "Open Sans", sans-serif;
 
-    color:black;
+    /* color:black; */
     font-size: 18px;
     margin-bottom: 20px;
     margin-left: 30px;
@@ -1128,7 +1140,70 @@ margin: 250px;;
 }
 .footer-content .fab{
     font-size: 20px;
+
 }
+.fa-facebook-f{
+    color:#01447e;
+   padding: 5px;
+   width: 22px;
+    text-align: center;
+}
+.fa-linkedin-in{
+    color:#0a70c9;
+    padding: 3px;
+    width: 25px;
+     text-align:center ;
+}
+.fa-facebook-f:hover{
+    background-color:#01447e;
+    color:white;
+   width: 22px;
+   padding: 5px;
+   border-radius: 20% 20% 20% 20%;
+
+   text-align: center;
+}
+.fa-linkedin-in:hover{
+    background-color:#0a70c9;
+color: white;
+padding: 3px;
+    width: 25px;
+   border-radius: 20% 20% 20% 20%;
+
+     
+    }
+   .fa-instagram{
+    padding:5px 5px;
+    width: 22px; 
+    border-radius: 22% 22% 22% 22%;
+    padding:2px ;
+    text-align: center;
+    width: 22px;
+ 
+    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   }
+   .fa-instagram:hover{
+    color:white;
+    width: 22px; 
+    border-radius: 20% 20% 20% 20%;
+    padding:2px ;
+    text-align: center;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   }
+   .fa-twitter{
+       color: rgb(11, 166, 228);
+       width: 22px; 
+   }
+   .fa-twitter:hover{
+      background-color:rgb(11, 166, 228);
+      color:white;
+      padding:2px;
+      width: 22px; 
+     
+
+    border-radius: 20% 20% 20% 20%;
+
+  } 
 .footer-content a:hover{
     color: rgb(147, 247, 138);
 } 
@@ -1249,6 +1324,7 @@ footer .mini-footer p a{
         background:transparent;
     }
 
+
     /* ===== latest-post======= */ 
     .post-content .post-card{
         width:calc(100% / 2 - 1.25rem);
@@ -1273,6 +1349,7 @@ footer .mini-footer p a{
     }
     .home .top-banner .text h1{
         font-size: 2rem;
+        margin-top: 100px;
     }
     .home .top-banner .text p{
         width:90%;
@@ -1312,6 +1389,7 @@ footer .mini-footer p a{
     }
     .award .counter-item .counter-text{
         margin-bottom:2rem;
+        
         width:100%;
     }
 
